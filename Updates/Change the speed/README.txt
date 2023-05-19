@@ -1,4 +1,4 @@
-**Change the speed
+Change the speed
 
 To arbitrarily changes the speed of the SMOs in the animations, I use a parameter called speed_factor.
 Speed_factor is an integer.
@@ -22,7 +22,10 @@ the same for the delta DEC array
 
 *the RA and DEC values are only for example, have no physical meaning.
 
-°Passing -2,-3,etc... as value, we add an occurence in both delta RA and delta DEC arrays every speed_factor times. We compute the "off" variable, making the mean of the delta_RA[i] and delta_RA[i+1]  value dividing for the absolute value of speed_factor, then we add to:  delta_RA[i] + off*t, where t  is t=0,1,2,... to abs(speed_factor)-1. 
+°Passing -2,-3,etc... as value, we add an occurence in both delta RA and delta DEC arrays every speed_factor times. We compute the "off" variable in this way:
+       abs(delta_RA[i+1] - delta_RA[i])/abs(speed_factor).
+Then, we add the "off" variable to build a new coordinate:
+       delta_RA[i] + off*t, where t  is t=0,1,2,... to (abs(speed_factor)-1). 
 
 Example:*
 
