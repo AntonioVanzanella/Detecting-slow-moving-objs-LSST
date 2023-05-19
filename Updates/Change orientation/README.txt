@@ -12,7 +12,8 @@ After this we inject the simulated SMOs using the PSF itself.
 
 2]
 
-Another attempt we made is to add a certain offset in each occurence of the delta_RA and delta_DEC offset.
+Another attempt we are making is to add a certain offset in each occurence of the delta_RA and delta_DEC array.
+We check the variation looking at the arcotangent of the rate between delta_RA and delta_DEC.
 
 
 
