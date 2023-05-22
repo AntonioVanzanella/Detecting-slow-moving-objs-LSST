@@ -1,4 +1,4 @@
-Change the orientation
+Change the orientation.
 We are trying two different approaches:
 
 1]
