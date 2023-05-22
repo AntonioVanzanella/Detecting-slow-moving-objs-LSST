@@ -8,13 +8,9 @@ Using a 2D rotation matrix:
 RotMatrix = np.array([[np.cos(RotRad),  np.sin(RotRad)],
                       [-np.sin(RotRad), np.cos(RotRad)]])
 We randomly chose the rotation angle.
-After this we inject the simulated SMOs using the PSF itself.
+After this, we inject the simulated SMOs using the PSF itself.
 
 2]
 
-Another attempt we are making is to add a certain offset in each occurence of the delta_RA and delta_DEC array.
-We check the variation looking at the arcotangent of the rate between delta_RA and delta_DEC.
-
-
-
-
+Another attempt we are making is to add a certain offset on each occurrence of the delta_RA and delta_DEC array.
+We check the variation by looking at the arctangent of the rate between delta_RA and delta_DEC.
