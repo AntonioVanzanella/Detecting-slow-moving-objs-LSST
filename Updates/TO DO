@@ -1,1 +1,10 @@
+What now:
 
+1)
+Firstly, we want to test our model with these newly modified samples.
+The question we want to answer is:
+
+How does the performance change as the speed and orientation of the samples change?
+
+2)
+We are implementing K-fold cross-validation, to retrain our model. 
